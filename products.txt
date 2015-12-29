@@ -1,0 +1,49 @@
+db.products.insert({
+	name: "Microsoft Surface",
+	category : "Electronics",
+	model:"7G5-00001",
+	sku: "4967017",
+	img: "https://somewebsite.com/someimage.jpeg",
+	price: 499.99,
+	pickup_available: true,
+	description: "Lorem ipsum",
+	release_date: ISODate('2015-12-28'),
+	specifications:
+	{
+		height: "7.36 inches",
+		weight: "21.92 ounces",
+		width: "10.52 inches",
+		battery_life:"10 hours",
+		display_type: "LCD",
+		touch_screen:"true",
+		memory:"2GB",
+		processor_type:"Intel"
+	},
+	reviews: [
+	{
+		subject : "Great tablet",
+		body : "This is a great product",
+		rating: "4.5",
+		user : "someuser01",
+		date : ISODate("2015-12-28"),
+		would_recommend: true
+	},
+	{
+		subject : "Mixed Reviews",
+		body : "This is a great product",
+		rating: "4.0",
+		user : "someuser02",
+		date : ISODate("2015-12-28"),
+		would_recommend: false
+	},
+	{
+		subject : "Good Deal",
+		body : "This is a great product",
+		rating: "4.5",
+		user : "someuser03",
+		date : ISODate("2015-12-28"),
+		would_recommend: true
+	}
+	],
+	protection_services: ['damage','battery','power']
+})
